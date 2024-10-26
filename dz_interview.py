@@ -43,12 +43,12 @@ def stack_balance(sequence):
                     balanced = False
         index = index + 1
     if balanced and stack_balance.is_empty():
-        return True
+        return 'Сбалансированно'
     else:
-        return False
+        return 'Несбалансированно'
 
-
-print(stack_balance("(([)])"))
+if __name__ == '__main__':
+    print(stack_balance("(([)])"))
 
 
 
